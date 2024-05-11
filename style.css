@@ -1,0 +1,476 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+}
+
+/* Navigation Bar */
+/* nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} */
+
+#home {
+    background-color: #7600bc;
+    margin-left: -1cm;
+    margin-right: -1cm;
+    padding-top: 2cm;
+    height: 260px;
+    margin-bottom: 40px;
+}
+
+.topmenu {
+    color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.topmenu:hover {
+    color: white;
+    /* Add the styles here */
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#linkedin {
+    color: white;
+    text-decoration: none;
+}
+
+#linkedin:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.topdiv {
+    float: right;
+    padding-right: 1cm;
+    padding-top: 10px;
+}
+
+.profile_name {
+    float: left;
+    /* Add the styles here */
+    color: white;
+    font-size: 25px;
+    font-style: normal;
+}
+
+#profile_name_hr {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.profile_name .contact_info {
+    font-size: 11px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact_info img {
+    width: 25px;
+    margin-right: 10px;
+    float: left;
+}
+
+/* Titles */
+
+h2 {
+    text-align: justify;
+    font-size: 45px;
+    text-align: center;
+    float: left;
+    color: #7600bc;
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.introduction {
+    text-align: justify;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation-duration: 5s;
+    position: relative;
+}
+
+/* Objectives */
+
+.container {
+    display: flex;
+    padding-left: 120px;
+}
+
+#objective h1 {
+    font-size: 65px;
+    margin-top: 70px;
+    color: #7600bc;
+    margin-left: 108px;
+}
+
+#objective p {
+    font-size: 20px;
+    color: rgb(14, 13, 13);
+    margin-top: -1cm;
+    padding-right: 100px;
+    margin-left: 108px;
+    margin-right: 100px;
+}
+
+.profile_image {
+    width: 440px;
+    height: fit-content;
+    vertical-align: middle;
+    margin-left: 55px;
+    padding-right: 20px;
+}
+
+div {
+    width: auto;
+    margin-left: 100px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* img_container needed to position the overlay. Adjust the width as needed */
+.img_container {
+    position: relative;
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 65px;
+    text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.img_container:hover .overlay {
+    opacity: 1;
+}
+
+/* Qualifications */
+
+.all_qualifications {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.qualifications {
+    border: 1px solid gray;
+    color: lightgray;
+    display: block;
+    border-radius: 15px;
+    text-align: unset;
+    margin: 50px 80px 50px 80px;
+    padding: 11px 25px 15px 30px;
+    width: 3.2in;
+    font-size: 18px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    background-color: rgb(32, 32, 130);
+    font-weight: normal;
+    transition: 2s;
+}
+
+.qualifications:hover {
+    width: 3.6in;
+    background: rgb(60, 51, 228);
+}
+
+hr {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/* Professional Experience */
+.professional_experience {
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    background-color: rgb(243, 240, 240);
+    font-weight: normal;
+    font-size: 18px;
+    padding: 30px;
+    padding-bottom: 35px;
+    width: 13in;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 180px;
+    transition: all 1.5s;
+}
+
+.professional_experience:hover {
+    transform: translateY(27px);
+    background:  rgb(250, 210, 163);
+    font-size: 19px;
+    width: 12.9in;
+}
+
+
+.professional_experience h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+
+}
+
+.professional_experience p {
+    align-items: center;
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+.professional_experience_text {
+    align-items: center;
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Education */
+.bg {
+    background-image: url("./html_finalprojimages/campus-spring.jpg");
+    width: 13in;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: rgb(9, 9, 9);
+    height: 480px;
+    padding-bottom: 5px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    margin-top: 40px;
+    margin-left: 180px;
+}
+
+.education-container {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.education-card {
+    margin: 0px 10px 10px 10px;
+    background-color: rgba(32, 32, 130, 0.326);
+    padding: 50px;
+    width: 11.6in;
+    border-radius: 15px;
+    color: rgb(247, 249, 248);
+    transition: all 1.5s;
+}
+
+.education-card:hover {
+    transform: translateY(27px);
+    font-size: 19.5px;
+    width: 11.5in;
+}
+
+.education-card h3 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.education-card li {
+    font-size: 18px;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+
+
+/* Copy right */
+#copy_right {
+    font-size: 11px;
+}
+
+
+
+
+/* Comments */
+
+/* .all_comments {
+    display: flex;
+    align-items: center;
+    margin-left: 1in;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 20px;
+}
+
+.comment {
+    font-style: italic;
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    height: 150px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    background-color: rgb(32, 32, 130);
+    font-weight: normal;
+    color: lightgray;
+}
+
+.comment span {
+    color: #7600bc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* Scroll to Top Button */
+
+.iconbutton {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+    transition: width 1.2s, height 1.2s, transform 1.2s;
+}
+
+.iconbutton:hover {
+    width: 60px;
+    height: 60px;
+    transform: rotate(360deg);
+    background: rgb(32, 32, 130);
+}
+
+/* Form Pop-up */
+
+/* .popup {
+    width: 400px;
+    background-color: #7600bc;
+    color: lightgray;
+    font-weight: normal;
+    border-radius: 3mm;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: fixed;
+    visibility: hidden;
+}
+
+.popup img {
+    padding-top: 20px;
+}
+
+.popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+}
+
+.popup button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+} */
+
+/* Comment Form */
+
+/* input,
+textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    width: 100%;
+}
+
+fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: thin solid white;
+    width: 50%;
+} */
+
+/* Buttons */
+
+/* button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #7600bc;
+    border: 1px solid #7600bc;
+    color: #fff;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+} */
