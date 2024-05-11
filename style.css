@@ -206,7 +206,7 @@ div {
 
 .qualifications:hover {
     width: 3.6in;
-    background: rgb(60, 51, 228);
+    background-image: linear-gradient(rgb(60, 51, 228), rgb(89, 200, 237));
 }
 
 hr {
@@ -231,7 +231,7 @@ hr {
 
 .professional_experience:hover {
     transform: translateY(27px);
-    background:  rgb(250, 210, 163);
+    background-image: linear-gradient( rgb(248, 177, 96), rgb(243, 240, 240)) ;
     font-size: 19px;
     width: 12.9in;
 }
