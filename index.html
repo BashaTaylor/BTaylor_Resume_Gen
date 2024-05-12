@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Barbara Taylor Resume</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script1.js"></script>
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -264,8 +264,14 @@
     </section>
     <div style="clear:both;"></div><br><br><br>
     <hr>
-    <div>
+    <div id="footer">
         <p id="copy_right">&copy; 2024 Created by Barbara Taylor</p>
+
+        <div class="popup">
+            <button class="print_btn" onmouseover="showPopup()" onclick="printPage()">Print Webpage</button>
+            <div class="popup-message" id="popupMessage">To print, adjust the scale in More Settings, change Scale from default to Custom, and select 45%.</div>
+        </div>
+
     </div>
     <div class="iconbutton">
         <a href="#home" aria-label="Go back up to the topmenu">
@@ -273,7 +279,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
                 width="63px">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
         </a>
     </div>
