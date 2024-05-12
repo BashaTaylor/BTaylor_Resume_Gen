@@ -1,6 +1,12 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
+    width: 100%;
 }
 
 /* Navigation Bar */
@@ -26,6 +32,7 @@ body {
     padding: 20px;
     font-size: 20px;
     text-decoration: none;
+    float: right;
 }
 
 .topmenu:hover {
@@ -120,7 +127,7 @@ h2 {
 #objective p {
     font-size: 20px;
     color: rgb(14, 13, 13);
-    margin-top: -1cm;
+    margin-top: 1cm;
     padding-right: 100px;
     margin-left: 108px;
     margin-right: 100px;
@@ -317,49 +324,6 @@ hr {
 }
 
 
-/* Copy right */
-#copy_right {
-    font-size: 11px;
-}
-
-
-
-
-/* Comments */
-
-/* .all_comments {
-    display: flex;
-    align-items: center;
-    margin-left: 1in;
-    flex-direction: row;
-    flex-flow: wrap;
-    padding: 20px;
-}
-
-.comment {
-    font-style: italic;
-    text-align: left;
-    width: 21.875rem;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid gray;
-    font-size: 18px;
-    height: 150px;
-    box-shadow: 0 10px 15px rgb(102, 102, 102);
-    background-color: rgb(32, 32, 130);
-    font-weight: normal;
-    color: lightgray;
-}
-
-.comment span {
-    color: #7600bc;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-} */
 
 /* Scroll to Top Button */
 
@@ -376,6 +340,7 @@ hr {
     bottom: 3%;
     cursor: pointer;
     transition: width 1.2s, height 1.2s, transform 1.2s;
+    margin-bottom: 48px;
 }
 
 .iconbutton:hover {
@@ -385,92 +350,48 @@ hr {
     background: rgb(32, 32, 130);
 }
 
-/* Form Pop-up */
+/* Footer */
+#footer {
+    margin-left: 60px;
 
-/* .popup {
-    width: 400px;
-    background-color: #7600bc;
-    color: lightgray;
-    font-weight: normal;
-    border-radius: 3mm;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    position: fixed;
+}
+/* Copy right */
+#copy_right {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.print_btn {
+    background-color: rgb(199, 198, 198); 
+    font-size: 12px; 
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px 25px 20px 355px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+}
+
+.popup .popup-message {
     visibility: hidden;
-}
-
-.popup img {
-    padding-top: 20px;
-}
-
-.popup button {
-    background-color: #fff;
-    border: 1px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
-    margin: 50px;
-    padding: 10px;
-    width: 2in;
-    font-size: 20px;
-    margin-left: 25%;
-}
-
-.popup button:hover {
-    background-color: #fff;
-    border: 2px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    font-weight: bolder;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 25%;
-} */
-
-/* Comment Form */
-
-/* input,
-textarea {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 10px;
-    width: 100%;
-}
-
-fieldset {
-    display: flexbox;
-    align-content: center;
-    justify-content: center;
-    padding: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: thin solid white;
-    width: 50%;
-} */
-
-/* Buttons */
-
-/* button {
-    background-color: #fff;
-    border: 1px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
-    margin: 50px;
-    padding: 10px;
-    width: 2in;
-    font-size: 20px;
-}
-
-button:hover {
-    background-color: #7600bc;
-    border: 1px solid #7600bc;
+    width: 120px;
+    background-color: #505050;
     color: #fff;
-    display: block;
-    border-radius: 6px;
     text-align: center;
-    cursor: pointer;
-} */
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.popup:hover .popup-message {
+    visibility: visible;
+    background-color: rgb(174, 173, 173);
+    width: 450px;
+    height: fit-content;
+}
