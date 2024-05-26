@@ -91,7 +91,9 @@ nav {
     /* Position it below the hamburger */
     top: 100%; 
     background-color: #5b038e; /* Match the background color of nav */
-    width: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     padding: 10px;
     margin-top: 10px;
 }
