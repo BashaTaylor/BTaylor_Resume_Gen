@@ -151,13 +151,8 @@ p {
 }
 
 .img_container {
-    width: 110%;
-    /* Ensure image container covers full width */
-    max-width: 450px;
-    /* Limit max-width for larger screens */
-    margin: auto;
-    /* Center align image container */
-    position: relative;
+    width: auto;
+    min-width: 250px;
 }
 
 #profile_image {
@@ -165,9 +160,9 @@ p {
     /* Ensure image covers full width of container */
     /* max-width: 100%; */
     /* Ensure image scales properly */
-    /* height: auto; */
-    width: 450px;
-    height: fit-content;
+    height: auto;
+    width: 100%;
+    /* height: fit-content; */
     /* Maintain aspect ratio */
     margin-left: 0;
     /* Reset margin for smaller screens */
@@ -189,13 +184,13 @@ p {
     background: rgba(0, 0, 0, 0.5);
     /* Black see-through */
     color: #f1f1f1;
-    width: 85%;
-    height: fit-content;
+    width: auto;
+    height: auto;
     transition: .5s ease;
     opacity: 0;
     color: white;
     font-size: 19px;
-    padding: 25px;
+    /* padding: 25px; */
     position: absolute;
 }
 
