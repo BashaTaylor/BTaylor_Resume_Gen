@@ -113,6 +113,10 @@ nav {
 /* Show menu items when checkbox is checked */
 #hamburger:checked ~ #hamitems {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
 }
 
 /* enlarging the hamburger manu! */
