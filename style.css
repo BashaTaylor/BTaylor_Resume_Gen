@@ -40,6 +40,10 @@ nav {
     max-height: 25px;
 }
 
+#contact_indent {
+    margin-left: 25px;
+}
+
 .contact_info {
     font-size: 14px;
 }
@@ -317,8 +321,8 @@ li::first-letter {
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     /* margin-top: 40px; */
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 80px;
+    margin-right: 50px;
     transition: all 2.5s;
 }
 
