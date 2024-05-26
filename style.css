@@ -11,12 +11,15 @@ body {
 }
 
 /* Navigation Bar */
+
 nav {
     background-color: #7600bc;
     padding: 10px 20px;
     /* Adjust padding for smaller screens */
     /* Adjust margin for smaller screens */
+    /* width: auto; */
     width: 100%;
+    max-width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: 0;
