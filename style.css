@@ -16,7 +16,7 @@ nav {
     padding: 10px 20px;
     /* Adjust padding for smaller screens */
     /* Adjust margin for smaller screens */
-    width: auto;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: 0;
@@ -124,11 +124,6 @@ p {
 }
 
 /* Summary Section */
-#summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 #summary h2 {
     font-size: 48px;
@@ -151,45 +146,48 @@ p {
 }
 
 .img_container {
-    width: auto;
-    min-width: fit-content;
+    width: 100%;
+    /* Ensure image container covers full width */
+    max-width: 400px;
+    /* Limit max-width for larger screens */
+    margin: auto;
+    /* Center align image container */
+    position: relative;
 }
 
 #profile_image {
+    width: 100%;
     /* Ensure image covers full width of container */
     max-width: 100%;
     /* Ensure image scales properly */
     height: auto;
-    /* width: 100%; */
-    height: fit-content;
     /* Maintain aspect ratio */
     margin-left: 0;
     /* Reset margin for smaller screens */
-    /* margin-right: 0; */
+    margin-right: 0;
     /* Reset margin for smaller screens */
-    /* margin-top: 20px; */
-    vertical-align: middle;
-    margin: 55px 0px -3px 60px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-top: 50px;
+    /* This worked so well to hide some overlay */
+    margin-bottom: -3px;
+    
 }
 
 .overlay {
-    margin-left: 90px;
-    bottom: 0;
+    margin-left: 0;
     /* Reset margin for smaller screens */
     text-align: center;
+    /* Center align text */
+    bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     /* Black see-through */
     color: #f1f1f1;
-    width: auto;
-    height: auto;
+    width: 90%;
     transition: .5s ease;
     opacity: 0;
     color: white;
-    font-size: 19px;
-    /* padding: 25px; */
+    font-size: 20px;
+    padding: 20px;
     position: absolute;
 }
 
