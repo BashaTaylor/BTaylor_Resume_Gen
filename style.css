@@ -156,12 +156,11 @@ p {
 }
 
 #profile_image {
-    /* width: 100%; */
     /* Ensure image covers full width of container */
-    /* max-width: 100%; */
+    max-width: 100%;
     /* Ensure image scales properly */
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     height: fit-content;
     /* Maintain aspect ratio */
     margin-left: 0;
