@@ -40,12 +40,12 @@ nav {
 .profile_name hr {
     margin-right: 20px;
     width: auto;
-
 }
 
 .profile_name img {
     max-width: 25px;
     max-height: 25px;
+    margin-right: 20px;
 }
 
 #contact_indent {
@@ -55,6 +55,8 @@ nav {
 .contact_info {
     font-size: 14px;
     word-wrap: break-word;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -94,11 +96,12 @@ nav {
     display: none;
     /* Position it below the hamburger */
     /* top: 100%;  */
-    background-color: #5b038e; /* Match the background color of nav */
+    background-color: #5b038e;
+    /* Match the background color of nav */
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding: 7px;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -106,7 +109,7 @@ nav {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 7px;
+    padding: 15px;
 }
 
 .hamnav a:hover {
@@ -115,16 +118,16 @@ nav {
 }
 
 /* Show menu items when checkbox is checked: display row */
-#hamburger:checked ~ #hamitems {
+#hamburger:checked~#hamitems {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 /* enlarging the hamburger manu! */
 label[for="hamburger"] {
     /* Replace XX with your desired size */
-    font-size: 1.428572em; 
+    font-size: 1.428572em;
 }
 
 /* Titles */
@@ -142,6 +145,7 @@ hr {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 /* Summary Section */
 
 #summary h2 {
@@ -187,11 +191,11 @@ hr {
     margin-top: 50px;
     /* This worked so well to hide some overlay at the bottom */
     margin-bottom: -3px;
-    
+
 }
 
 .overlay {
-    margin-left: 0;
+    margin-left: 10px;
     /* Reset margin for smaller screens */
     text-align: center;
     /* Center align text */
@@ -242,6 +246,7 @@ li::first-letter {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
+    justify-content:space-evenly;
 }
 
 .qualifications {
@@ -276,6 +281,8 @@ li::first-letter {
     padding-bottom: 35px;
     /* width: 13in; */
     border-radius: 15px;
+    display: block;
+    margin-right: 50px;
     margin-top: 50px;
     margin-left: 80px;
     transition: all 2.5s;
@@ -324,14 +331,14 @@ li::first-letter {
     width: auto;
     /* Center education section */
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     border-radius: 15px;
     color: rgb(9, 9, 9);
-    height: 550px;
+    height: 100%;
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
-    /* margin-top: 40px; */
+    display: block;
     margin-left: 80px;
     margin-right: 50px;
     transition: all 2.5s;
@@ -339,31 +346,24 @@ li::first-letter {
 
 .bg:hover {
     transform: translateY(2%);
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.education-container {
-    margin: 15px auto;
-    width: 80%;
+    height: 100%;
 }
 
 .education-card {
     width: 80%;
-    height: 180px;
-    background-color: rgba(32, 32, 130, 0.326);
+    height: 70%;
     padding: 30px 40px 50px 40px;
     font-size: 18px;
     border-radius: 15px;
-    color: rgb(247, 249, 248);
+    color: white;
     transition: all 2.5s;
     margin-left: auto;
     margin-right: auto;
 }
 
 .education-card:hover {
-    transform: translateY(6%);
+    transform: translateY(5%);
+    background-color: rgba(0, 0, 128, 0.706);
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -371,8 +371,6 @@ li::first-letter {
 
 .education-card h3 {
     margin-left: 0;
-    /* Reset margin for smaller screens */
-    /* margin-top: 10px ; */
 
 }
 
